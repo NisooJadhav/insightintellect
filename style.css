@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url("assets/images/bg.jpeg") center;
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 50%;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  justify-content: flex-start;
+
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: relative;
+  background: hsla(0, 0%, 0%, 0.9);
+}
+
+.leftBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 50vw;
+  border-radius: 5vh 0 0 5vh;
+}
+.rightBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  width: 40vw;
+
+  /* From https://css.glass */
+  background: linear-gradient(to bottom, #ffffff99, #ffffff99);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+}
+
+.rightBox form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+img {
+  width: 35vw;
+  cursor: pointer;
+}
+
+input {
+  font-size: 1.2rem;
+  padding: 10px;
+  padding-right: 0;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 3px solid rgb(0, 119, 213);
+  color: #0077d4;
+  font-weight: 600;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  box-shadow: 2px 2px 4px #00000030;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+/* PLACEHOLDERS */
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #00000060;
+  font-weight: 400;
+}
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: #00000060;
+  font-weight: 400;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 25px;
+}
+
+.signup {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 5px;
+  border-radius: 5px;
+  border: 3px solid #0077d4;
+  cursor: pointer;
+  margin-right: 10px;
+  background: #fff;
+  color: #0077d4;
+  transition: all 0.3s;
+}
+
+.signup:hover {
+  transition: all 0.3s;
+  border-radius: 25px;
+}
+
+.anotherButton {
+  color: #000 !important;
+  background: transparent;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+  opacity: 0.6;
+}
+.anotherButton:hover {
+  color: #000 !important;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.head {
+  color: #0077d4;
+  padding: 2vh;
+}
+
+input[type="radio"] {
+  border: 0px;
+  width: 15%;
+  height: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  cursor: pointer;
+  margin: 0;
+  margin-right: 6px;
+}
+
+.col-4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.error {
+  color: red !important;
+}
+
+#password,
+#confirmPassword {
+  margin-right: 10px;
+}
+
+.eye,
+.eye2 {
+  margin: 0;
+  position: absolute;
+  margin-left: 24vw;
+  padding-right: 2px;
+
+  width: 30px;
+  opacity: 60%;
+  transition: all 0.3s;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.eye:hover,
+.eye2:hover {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.passwords {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+}
